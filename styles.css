@@ -15,7 +15,7 @@ body {
   }
   body {
 
-    background-image: url("Background_purple.a6c0d005.png");
+    background-image: url("Background_purple.a6c0d0.png");
     
     background-repeat: no-repeat;
     
@@ -439,51 +439,62 @@ body {
   
     
 
-      .navbar-toggler{
-          border:0;
-      }
-      .navbar-toggler:focus,
-      .navbar-toggler:active,
-      .navbar-toggler-icon:focus{
-          outline:none;
-          box-shadow:none;
-          border:0;
-      }
-      .toggler-icon{
-          width:30px;
-          height:2px;
-          background-color:#e74c3c;
-          display:block;
-          transition: all 0.2s;
-      }
-      .middle-bar{
-          margin:5px;
-      }
-      .navbar-toggler .top-bar{
-          transform:rotate(45deg);
-          transform-origin: 10% 10%;
-      }
+      navbar-toggler{
+        border:0;
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus{
+        outline:none;
+        box-shadow:none;
+        border:0;
+    }
+    .toggler-icon{
+        width:30px;
+        height:2px;
+        background-color:#e74c3c;
+        display:block;
+        transition: all 0.2s;
+    }
+    .middle-bar{
+        margin:5px;
+    }
+    .navbar-toggler .top-bar{
+        transform:rotate(45deg);
+        transform-origin: 10% 10%;
+    }
 
-      .navbar-toggler .middle-bar{
-          opacity:0;
-          filter: alpha(opacity=0);
-      }
+    .navbar-toggler .middle-bar{
+        opacity:0;
+        filter: alpha(opacity=0);
+    }
 
-      .navbar-toggler .bottom-bar{
-          transform:rotate(-45deg);
-          transform-origin: 10% 10%;
-      }
+    .navbar-toggler .bottom-bar{
+        transform:rotate(-45deg);
+        transform-origin: 10% 10%;
+    }
 
-      .navbar-toggler.collapsed .top-bar{
-          transform:rotate(0);
-      }
-      .navbar-toggler.collapsed .middle-bar{
-          opacity:1;
-          filter: alpha(opacity=100);
-      }
-      .navbar-toggler.collapsed .bottom-bar{
-          transform:rotate(0);
-      }
-      .navbar-toggler.collapsed .toggler-icon{
-          background-color: #777777;
-      }
+    .navbar-toggler.collapsed .top-bar{
+        transform:rotate(0);
+    }
+    .navbar-toggler.collapsed .middle-bar{
+        opacity:1;
+        filter: alpha(opacity=100);
+    }
+    .navbar-toggler.collapsed .bottom-bar{
+        transform:rotate(0);
+    }
+    .navbar-toggler.collapsed .toggler-icon{
+        background-color: #777777;
+    }
+    .navbar-img{
+        height:60px;
+        width:60px;
+        border-radius:30px;
+        margin:0px;
+    }
+    .logo-img{
+        height:70vh;
+        width:40vw;
+        border-radius:100px;
+    }
