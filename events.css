@@ -247,9 +247,17 @@ ul.social-network li {
   background-color: #007bb7;
 }
 
+.social-network a.icoYoutube:hover {
+  background-color: #e70c22;
+}
+.social-network a.icoMedium:hover {
+  background-color: #085a05;
+}
 .social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoYoutube:hover i,
+.social-network a.icoMedium:hover i {
+    color: #fff;
 }
 
 .social-network a.socialIcon:hover,
@@ -301,3 +309,11 @@ ul.social-network li {
 .social-network a {
   background-color: #F9F9F9;
 }
+#loader{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
+  z-index: 1;
+}
+
