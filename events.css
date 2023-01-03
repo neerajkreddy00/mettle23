@@ -317,3 +317,10 @@ ul.social-network li {
   z-index: 1;
 }
 
+.ccc{
+  background-color: #e539471c;
+  padding: 20px;
+  border-style: solid;
+  border-color: #F1B0FC;
+  border-radius: 1rem;
+}
