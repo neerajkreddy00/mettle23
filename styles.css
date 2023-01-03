@@ -99,7 +99,7 @@ body {
   }
   
   .we_cardbody {
-    background-color:  #2a436b;
+    background-color:  #E53948;
   }
   
   .we_card:hover{
@@ -230,7 +230,7 @@ body {
       }
       
       .mem_content {
-        background-color: rgb(0,10,19);
+        background-color: #E53948;
         width: 90%;
         text-align: center;
         margin: -60px auto 0 auto;
@@ -240,7 +240,7 @@ body {
       }
       
       .team-10-h2 {
-        color: #BDC696;
+        color: white;
         font-size: 25px;
         letter-spacing: 2;
         font-weight: 400;
@@ -251,7 +251,7 @@ body {
       }
       
       .team-10-h3 {
-        color: #D1D3C4;
+        color: white;
         font-size: 16px;
         font-weight: 300;
       }
