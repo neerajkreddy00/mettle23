@@ -38,7 +38,16 @@ body {
       padding: 0 100px 0 100px;
     }
   }
-  
+  @media (min-width: 650px){
+    .home-buttons{
+      flex-direction: row;
+    }
+  }
+  @media (max-width: 650px){
+    .home-buttons{
+      flex-direction: column;
+    }
+  }
   @media (min-width: 700px) and (max-width: 1024px) {
     .wecontent {
       padding: 0 50px 0 50px;
@@ -663,5 +672,4 @@ body {
       background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
       z-index: 1;
     }
-    
     
