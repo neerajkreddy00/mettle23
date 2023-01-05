@@ -15,7 +15,7 @@ body {
   }
   
   body {
-      background-image: url("");
+    background: linear-gradient(180deg, rgba(15, 3, 5, 0.2) -162.91%, #0F0305 100%), url(samplebg1.png);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: 100% 100%;
