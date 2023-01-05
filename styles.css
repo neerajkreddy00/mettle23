@@ -8,10 +8,10 @@ body {
   padding: 0px;
   overflow-x: hidden !important;
 }
-@import url(//db.onlinewebfonts.com/c/d002e7c91b889cc10ce21789cfde95dd?family=Sequel100Wide-95);
-.mettle-heading{
-  font-family: "Sequel100Wide-95";
-}
+<<<<<<< HEAD
+
+=======
+>>>>>>> parent of dc178ca (heading-font)
 #weheading {
     text-align: center;
     margin: 40px 0 40px 0;
