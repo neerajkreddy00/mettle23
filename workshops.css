@@ -17,6 +17,10 @@ body {
     font-family: myFirstFont;
     src: url(/Sequel\ 100/Sequel100Black-75.ttf);
   }
+  @font-face {
+    font-family: myNavFont;
+    src: url(/Sequel\ 100/Sequel100Black-55.ttf);
+  }
   body {
     background: linear-gradient(180deg, rgba(15, 3, 5, 0.2) -162.91%, #0F0305 100%), url(samplebg1.png);
       background-repeat: no-repeat;
