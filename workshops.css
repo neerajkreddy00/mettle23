@@ -13,7 +13,10 @@ body {
       margin: 20px 0 20px 0;
       color: white;
   }
-  
+  @font-face {
+    font-family: myFirstFont;
+    src: url(/Sequel\ 100/Sequel100Black-75.ttf);
+  }
   body {
     background: linear-gradient(180deg, rgba(15, 3, 5, 0.2) -162.91%, #0F0305 100%), url(samplebg1.png);
       background-repeat: no-repeat;

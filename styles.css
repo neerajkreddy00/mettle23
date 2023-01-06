@@ -9,6 +9,22 @@ body {
   overflow-x: hidden !important;
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(/Sequel\ 100/Sequel100Black-75.ttf);
+}
+@font-face {
+  font-family: myHeadingFont;
+  src: url(/Sequel\ 100/Sequel100Black-45.ttf);
+}
+@font-face {
+  font-family: myNavFont;
+  src: url(/Sequel\ 100/Sequel100Black-55.ttf);
+}
+@font-face {
+  font-family: myFont;
+  src: url(/DM_Sans/DMSans-Regular.ttf);
+}
 #weheading {
     text-align: center;
     margin: 40px 0 40px 0;
@@ -318,6 +334,7 @@ body {
         opacity: 0;
         transition: 1s ease;
         background-color:  rgb(0,10,19);
+        border-radius: 5px;
       }
       
       .mem_content:hover .mem_overlay {
