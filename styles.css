@@ -32,6 +32,11 @@ body {
       transform:scale(0.98);
     }
   
+  @media (min-width: 500px) {
+    .timer{
+      padding-left: 3vw;
+    }
+  }
   @media (min-width: 1024px)
   {
     .wecontent 
