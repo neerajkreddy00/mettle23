@@ -182,6 +182,7 @@
 				</div>
 			</div>
 		</div> -->
+		<br/>
 		<h1 style="text-align: center;">Brands we've worked with</h1>
 		<br/>
 				<br/>
@@ -211,7 +212,48 @@
 				</div>
 				<br/>
 				<br/>
-
+				<br/>
+				<h1 style="text-align: center; color: #E53948;">Discover the wonders of <span style="color: white;">Fractals</span> in</h1>
+				
+				<!--timer-->
+				<div style="display: flex; gap: 5px; padding-left: 5vw; padding-top: 5vw;" class="text-center">
+					<div style="display: flex; gap: 5px; flex-direction: row;">
+						<div style="flex-direction: row; background-color: #e539471c; width: 10vw; height: 15vw; border-radius: 5px;" ><p style="font-size :10vw;" id="d1"></p></div> 
+						<div style="flex-direction: row; background-color: #e539471c; width: 10vw; height: 15vw; border-radius: 5px;"><p style="font-size :10vw;" id="d2"></p></div>
+					</div>
+					<p style="font-size :10vw; ">:</p>
+					<div style="display: flex; gap: 5px; flex-direction: row;">
+						<div style="flex-direction: row; background-color: #e539471c; width: 10vw; height: 15vw; border-radius: 5px;"><p style="font-size :10vw;" id="h1"></p></div> 
+						<div style="flex-direction: row; background-color: #e539471c; width: 10vw; height: 15vw; border-radius: 5px;"><p style="font-size :10vw;" id="h2"></p></div>
+					</div>
+					<p style="font-size :10vw; ">:</p>
+					<div style="display: flex; gap: 5px; flex-direction: row;">
+						<div style="flex-direction: row; background-color: #e539471c; width: 10vw; height: 15vw; border-radius: 5px;"><p style="font-size :10vw;" id="m1"></p></div> 
+						<div style="flex-direction: row; background-color: #e539471c; width: 10vw; height: 15vw; border-radius: 5px;"><p style="font-size :10vw;" id="m2"></p></div>
+					</div>
+					<p style="font-size :10vw;">:</p>
+					<div style="display: flex; gap: 5px; flex-direction: row;">
+						<div style="flex-direction: row; background-color: #e539471c; width: 10vw; height: 15vw; border-radius: 5px;"><p style="font-size :10vw;" id="s1"></p></div>
+						<div style="flex-direction: row; background-color: #e539471c; width: 10vw; height: 15vw; border-radius: 5px;"><p style="font-size :10vw;" id="s2"></p></div>
+					</div>
+				</div>
+					<div style="display: flex; padding-left: 5vw;" class="text-center"> 
+						<div class="text-center" style="flex-direction: row; width: 23vw;">
+							<p style="font-size :2vw;">Days</p>
+						</div>
+						<div class="text-center" style="flex-direction: row; width: 23vw;">
+							<p style="font-size :2vw;">Hours</p>
+						</div>
+						<div class="text-center" style="flex-direction: row; width: 23vw;">
+							<p style="font-size :2vw;">Minutes</p>
+						</div>
+						<div class="text-center" style="flex-direction: row; width: 23vw;">
+							<p style="font-size :2vw;">Seconds</p>
+						</div>
+						
+					</div>
+				
+				<!--timer-->
 
 		<section id="workshop_events">
 			<h1 id="weheading">Past Workshops and Events</h1>
@@ -332,7 +374,7 @@
 							 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" >
 									 <div class="con_mem" >
 											 <div class="mem_img">
-													 <img src="22.jpg" alt="" style="border: 10px; border-color: #E53948;">
+													 <img src="22.jpg" alt="" style="border: 5px; border-color: #E53948;">
 											 </div>
 											 <div class="mem_content" >
 												 <h2 class="team-10-h2">Haeshini</h2>
@@ -401,7 +443,7 @@
 
 	<div style=" background-color: #ffffff;
     width: 420px;
-    padding: 30px 40px;
+    padding: 5px 40px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -412,7 +454,7 @@
         <button style="display: block;
 		margin:  0 0 20px auto;
 		background-color: transparent;
-		font-size: 30px;
+		font-size: 5px;
 		color: #ffffff;
 			background: #03549a;
 			border-radius: 100%;
@@ -431,7 +473,7 @@
         <a style="display: block;
 		width: 150px;
 		position: relative;
-		margin: 10px auto;
+		margin: 5px auto;
 		text-align: center;
 		background-color: #0f72e5;
 		border-radius: 20px;
@@ -636,5 +678,43 @@ document.querySelector("#close").addEventListener("click", function(){
 				duration: 1000,
 			});
 		</script>
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Jan 26, 2023 00:00:00").getTime();
+			
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+			
+			  // Get today's date and time
+			  var now = new Date().getTime();
+				
+			  // Find the distance between now and the count down date
+			  var distance = countDownDate - now;
+				
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				
+			  // Output the result in an element with id="demo"
+			//   document.getElementById("demo").innerHTML = days + " : " + hours + " : "
+			//   + minutes + " : " + seconds ;
+			  document.getElementById("d1").innerHTML= Math.floor(days/10);
+			  document.getElementById("d2").innerHTML= days%10;
+			  document.getElementById("h1").innerHTML= Math.floor(hours/10);
+			  document.getElementById("h2").innerHTML= hours%10;
+			  document.getElementById("m1").innerHTML= Math.floor(minutes/10);
+			  document.getElementById("m2").innerHTML= minutes%10;
+			  document.getElementById("s1").innerHTML= Math.floor(seconds/10);
+			  document.getElementById("s2").innerHTML= seconds%10;
+			
+			  // If the count down is over, write some text 
+			  if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+			</script>
 	</body>
 </html>
