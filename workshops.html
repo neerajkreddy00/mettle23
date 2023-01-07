@@ -61,6 +61,7 @@
 			<div class="container" style="font-family: myNavFont;">
 				<a href="index.html" ><img src="mettlelogo.png" alt="" width="80px" height="80px"></a>
 				<button
+				id="navbutton"
 					class="navbar-toggler collapsed"
 					type="button"
 					data-bs-toggle="collapse"
@@ -391,7 +392,10 @@
 		</script>
 		<script type="text/javascript">
 			var nav = document.querySelector("nav");
-
+			let button = document.querySelector('#navbutton');
+			button.addEventListener("click",()=>{
+				nav.classList.add("bg-dark", "shadow");
+				});
 			window.addEventListener("scroll", function () {
 				if (window.pageYOffset > 100) {
 					nav.classList.add("bg-dark", "shadow");
