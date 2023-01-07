@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mettle'23</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="team.css" />
 		<link rel="shortcut icon" href="mettlelogo.png" type="image/x-icon">
 
 		<link
@@ -187,6 +188,70 @@
       background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
       z-index: 1;
     }
+    .hi-slide { position: relative; width: 754px; height: 292px; margin: 50px auto 0; }
+            
+.hi-slide .hi-next,
+.hi-slide .hi-prev 
+            { position: absolute;
+              top: 50%; 
+              width: 40px;
+              height: 40px; 
+              margin-top: -20px;     
+                border-radius: 50px; 
+                 
+                
+              line-height: 40px;
+              text-align: center; 
+              cursor: pointer;
+              background-color: #E53948; 
+              color: black;               
+              transition: all 0.6s;
+              font-size: 20px; 
+                font-weight: bold;
+            }
+           .hi-slide .hi-next:hover, 
+            .hi-slide .hi-prev:hover 
+            {
+            opacity: 1; 
+            background-color: #E53948;  
+            }
+            
+           .hi-slide .hi-prev { left: -60px; }
+            
+    .hi-slide .hi-prev::before { content: '<'; }
+    .hi-slide .hi-next { right: -100px; }
+    .hi-slide .hi-next::before { content: '>'; }
+    
+            .hi-slide > ul
+                    { 
+                        list-style: none; 
+                        position: relative;
+                        width: 754x; 
+                        height: 292px; 
+                        margin: 0;
+                        padding: 0;
+            }
+            
+            
+        .hi-slide > ul > li {
+            overflow: hidden; 
+            position: absolute; 
+            z-index: 0; 
+            left: 377px;
+            top: 146px; 
+            width: 0; 
+            height: 0; 
+            margin: 0; 
+            padding: 0;
+            border: 3px solid #E53948;              
+            background-color: #333; 
+            cursor: pointer; }
+            
+        .hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center;}
+
+ 
+
+		</style>
 		</style>
 		<script type="text/javascript" src="loader.js"></script>
 	</head>
@@ -246,89 +311,21 @@
 		<br />
 		<br />
 		<h1 style="text-align: center; color: #E53948; font-family: myFirstFont; font-size: 8vw; width: 70vw; margin: auto;">Team</h1>
-		<br />
-		<br />
-
-		<div class="gg">
-   
-      <div class="text-center">
-        <img src="22.jpg" style="height:40vh;padding: 50px; clip-path: circle(90px);">
-        <h2 >Madhu Reddi</h2>
-        <br/>
-       
-        <h3 style="font-weight: 200; ">CoHead</h3>
-    
-      </div>  
-      <div class="text-center">
-        <img src="22.jpg" style="height:40vh;padding: 50px; clip-path: circle(90px);">
-        <h2 >Neeraj Reddy</h2>
-        <br/>
-       
-        <h3 style="font-weight: 200; ">CoHead</h3>
-      </div>  
-      <div class="text-center">
-        <img src="22.jpg" style="height:40vh;padding: 50px; clip-path: circle(90px);">
-        <h2 >Baranidharan</h2>
-        <br/>
-       
-        <h3 style="font-weight: 200; ">CoHead</h3>
-      </div> 
-
-      
-    </div>
-
-    <div class="gg">
-   
-      <div class="text-center">
-        <img src="22.jpg" style="height:40vh;padding: 50px; clip-path: circle(90px);">
-        <h2 >Madhu Reddi</h2>
-        <br/>
-       
-        <h3 style="font-weight: 200; ">CoHead</h3>
-    
-      </div>  
-      <div class="text-center">
-        <img src="22.jpg" style="height:40vh;padding: 50px; clip-path: circle(90px);">
-        <h2 >Neeraj Reddy</h2>
-        <br/>
-       
-        <h3 style="font-weight: 200; ">CoHead</h3>
-      </div>  
-      <div class="text-center">
-        <img src="22.jpg" style="height:40vh;padding: 50px; clip-path: circle(90px);">
-        <h2 >Baranidharan</h2>
-        <br/>
-       
-        <h3 style="font-weight: 200; ">CoHead</h3>
-      </div>    
-      
-    </div>
-    <div class="gg">
-   
-      <div class="text-center">
-        <img src="22.jpg" style="height:40vh;padding: 50px; clip-path: circle(90px);">
-        <h2 >Madhu Reddi</h2>
-        <br/>
-       
-        <h3 style="font-weight: 200; ">CoHead</h3>
-    
-      </div>  
-      <div class="text-center">
-        <img src="22.jpg" style="height:40vh;padding: 50px; clip-path: circle(90px);">
-        <h2 >Neeraj Reddy</h2>
-        <br/>
-       
-        <h3 style="font-weight: 200; ">CoHead</h3>
-      </div>  
-      <div class="text-center">
-        <img src="22.jpg" style="height:40vh;padding: 50px; clip-path: circle(90px);">
-        <h2 >Baranidharan</h2>
-        <br/>
-       
-        <h3 style="font-weight: 200; ">CoHead</h3>
-      </div>    
-      
-    </div>
+		
+		<div class="slide hi-slide">
+			<div class="hi-prev "></div>
+			  <div class="hi-next "></div>
+			  <ul>
+				  <li><img src="TeamImages/Core1 Medium.png" alt="Img 1" /></li>
+				  <li><img src="TeamImages/workshop+marketing2 Medium.png" alt="Img 2" /></li>
+				  <li><img src="TeamImages/Descon1 Medium.png" alt="Img 3" /></li>
+				  <li><img src="TeamImages/Webops Medium.png" alt="Img 4" /></li>
+				  <li><img src="TeamImages/Oc1 Medium.png" alt="Img 5" /></li>
+				  <li><img src="TeamImages/PR+Exhib Medium.png" alt="Img 6" /></li>
+				  <li><img src="TeamImages/Publicity1 Medium.png" alt="Img 7" /></li>
+  
+			  </ul>
+		  </div>
     <br/>
     <br/>
 
@@ -391,6 +388,11 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hislide.js" ></script>
+		<script>
+			$('.slide').hiSlide();
+		</script>
 		<script type="text/javascript">
 			var nav = document.querySelector("nav");
 
