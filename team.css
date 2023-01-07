@@ -5,7 +5,7 @@
     .hi-slide{
         margin-left:  -263px !important;
         overflow: hidden;
-        width: 100vw;
+        width: 170vw !important;
     }
     .navbar{
         width: 100vw;
