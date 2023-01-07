@@ -377,7 +377,7 @@
 								></a>
 							</li>
 						</ul>
-						<hr align="center" style="border-color: white; width: 320px" />
+						<!-- <hr align="center" style="border-color: white; width: 320px" /> -->
             <p style="color: white; font-size: 15px; text-align: center">
 							Made with
 							<span style="color: #E53948; display: inline-flex; font-size: 1.8em"
@@ -433,6 +433,12 @@
 			AOS.init({
 				duration: 1000,
 			});
+			var scrollEventHandler = function()
+			{
+			window.scroll(0, window.pageYOffset)
+			}
+
+			window.addEventListener("scroll", scrollEventHandler, false);
 		</script>
 	</body>
 </html>
