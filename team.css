@@ -1,5 +1,5 @@
 @media (max-width: 991px) {
-    .slider{
-        width: 50vw;
+    .hi-slide{
+        margin-left:  -263px !important;
     }
 }
