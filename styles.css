@@ -7,6 +7,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden !important;
+  max-width: 100%;
 }
 
 @font-face {
@@ -24,6 +25,19 @@ body {
 @font-face {
   font-family: myFont;
   src: url(/DM_Sans/DMSans-Regular.ttf);
+}
+@media (max-width: 991px) {
+  body,html{
+  overflow-x: hidden;
+  }
+  .hi-slide{
+      margin-left:  -215px !important;
+      overflow: hidden;
+      width: 157vw !important;
+  }
+  .navbar{
+      width: 100vw;
+  }
 }
 #weheading {
     text-align: center;
