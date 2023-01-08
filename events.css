@@ -22,6 +22,10 @@ body {
   src: url(/Sequel\ 100/Sequel100Black-75.ttf);
 }
 @font-face {
+  font-family: myFont;
+  src: url(/DM_Sans/DMSans-Regular.ttf);
+}
+@font-face {
   font-family: myNavFont;
   src: url(/Sequel\ 100/Sequel100Black-55.ttf);
 }

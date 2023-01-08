@@ -19,6 +19,10 @@ body {
     src: url(/Sequel\ 100/Sequel100Black-75.ttf);
   }
   @font-face {
+    font-family: myFont;
+    src: url(/DM_Sans/DMSans-Regular.ttf);
+  }
+  @font-face {
     font-family: myNavFont;
     src: url(/Sequel\ 100/Sequel100Black-55.ttf);
   }
@@ -372,10 +376,12 @@ body {
           color:grey;
       }
       .workshops-button{
-          border-radius:5px;
           border-width:0px;
-          background-color:blue;
+          
+          background: #E53948;
           color:white;
+          padding: 10px;
+          font-style: normal;
       }
       .background-image{
           background-image:url("https://res.cloudinary.com/dgjxxpqaq/image/upload/v1671622129/Background_purple.a6c0d005_xzxfrs.png");
