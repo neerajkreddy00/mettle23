@@ -317,13 +317,13 @@
 			var nav = document.querySelector("nav");
 			let button = document.querySelector('#navbutton');
 			button.addEventListener("click",()=>{
-				nav.classList.add("bg-dark", "shadow");
+				nav.classList.add("nav-bg", "shadow");
 				});
 			window.addEventListener("scroll", function () {
 				if (window.pageYOffset > 100) {
-					nav.classList.add("bg-dark", "shadow");
+					nav.classList.add("nav-bg", "shadow");
 				} else {
-					nav.classList.remove("bg-dark", "shadow");
+					nav.classList.remove("nav-bg", "shadow");
 				}
 			});
 		</script>

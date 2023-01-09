@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mettle'23</title>
 		<link rel="stylesheet" href="events.css" />
+		<link rel="stylesheet" href="styles.css" />
+
 		<link rel="shortcut icon" href="mettlelogo.png" type="image/x-icon">
 
 		<link
@@ -249,16 +251,25 @@
               
                 <div class="content" style="font-family: myFont;">
                  <br>
-                  <div class="header" style="color: #3EB6E6; font-size: 24px;">What If</div>
+                  <div class="header" style="color: #3EB6E6; font-size: 24px;">Photochromic</div>
                   <div class="description" style="font-size: 16px;">
-                    Join the Science Explorers and Materials Science Enthusiasts article writing competition! Share your creative expressions and showcase your knowledge of science.
+                    Photography is a  very special medium that gives a realization of how rich reality is. Here comes an opportunity to show your mettle in “freezing the right moment.” Mettle’23 presents you with Photochromic, our themed photography event. Grab your cameras! Tweak your creativity!! Capture the best!
                   </div>
                   <br>
                   <h1 class="header" style="color:#E53948; font-size: 16px;"><span class="bi bi-trophy-fill"></span> INR 3000</h1>
-                  <h1 class="header" style="color:#E53948; font-size: 16px;">Deadline: 19/01/23, 11:59 PM IST</h1>
+                  <h1 class="header" style="color:#E53948; font-size: 16px;">Deadline: 27/01/23, 11:59 PM IST</h1>
                   <div class="text-center">
                     <br>
-                    <button class = "workshops-button mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-style: normal;">View Details and Register</button>
+                    <div class="home-buttons" style="display: flex;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 48px;
+                    justify-content: center;
+                    margin: auto;
+                    ">
+                    <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Register</button>
+                    <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -656,17 +667,34 @@
             </div>
           </div>
         </footer>
+        <script>
+          function openPopup() {
+              document.getElementById("boxPopup").style.display = "block";
+          }
+  
+          function closePopup() {
+              document.getElementById("boxPopup").style.display = "none";
+          }
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function (event) {
+              var modal = document.getElementById('boxPopup');
+              if (event.target == modal) {
+                  closePopup();
+              }
+          }
+  
+      </script>
                   <script type="text/javascript">
                     var nav = document.querySelector("nav");
                     let button = document.querySelector('#navbutton');
                       button.addEventListener("click",()=>{
-                        nav.classList.add("bg-dark", "shadow");
+                        nav.classList.add("nav-bg", "shadow");
                         });
                     window.addEventListener("scroll", function () {
                       if (window.pageYOffset > 100) {
-                        nav.classList.add("bg-dark", "shadow");
+                        nav.classList.add("nav-bg", "shadow");
                       } else {
-                        nav.classList.remove("bg-dark", "shadow");
+                        nav.classList.remove("nav-bg", "shadow");
                       }
                     });
                   </script>

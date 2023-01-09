@@ -252,6 +252,63 @@
 				<br/>
 				<br/>
 				
+		<br>
+		<br>
+		<h1 class="text-center" style=" font-family: myHeadingFont;" >Get more bang for your bucks!</h1>
+		
+		<div class = "container">
+			<div class = "row pb-5 d-flex flex-row justify-content-center">
+				<div class="card col-lg-9 p-4 m-4 mt-5 mb-4" style="border: 1.5px solid rgba(241, 176, 252, 0.6); border-radius: 16px; background: linear-gradient(137.74deg, rgba(255, 255, 255, 0.075) 0%, rgba(242, 242, 242, 0.0225) 101.31%);">
+					<h1 class="text-center" style=" font-family: myHeadingFont; color: #E53948; font-size:x-large;" >Combo offers on workshops</h1>
+					<div class="image">
+						<div style="display: flex; gap:20px;">
+					  <div style="font-family: myFont; flex-direction: row;">
+					    <img style="width: 100%; border: 1.5px solid rgba(230, 163, 143, 0.6); border-radius: 8px;" src="https://mettle.nitt.edu/MettleWorkshops-main/assets/img/3d_norm.png" />
+						<h2 style="color: #3EB6E6; font-size: 24px; padding-top: 20px;">3D Printing by CAMA</h2>
+						<p style="font-size: 20px;"><s style="color: #E59AA0; font-size: 16px;">INR 440</s> INR 350</p>
+					</div> 
+					  <h1 style="font-family: myFont; color: #E53948; font-family: myFont; padding-top: 100px;">+</h1>
+					  <div style="font-family: myFont; flex-direction: row;">
+						<img style="width: 100%; border: 1.5px solid rgba(230, 163, 143, 0.6); border-radius: 8px;" src="https://mettle.nitt.edu/MettleWorkshops-main/assets/img/3d_norm.png" />
+						<h2 style="color: #3EB6E6; font-size: 24px; padding-top: 20px;">Non Destructive Testing</h2>
+						<p style="font-size: 20px;"><s style="color: #E59AA0; font-size: 16px;">INR 600</s> INR 450</p>
+					</div>
+					</div>
+					  <div class="content" style="font-family: myFont;">
+					   <br>
+						<div class="description text-center" style="font-size: 24px; color: #E59AA0;">
+							Buy two workshop tickets and save 10% of the total value
+						</div>
+						<br>
+						<!-- <div class="text-center" >
+							<img src="10-percent.png" style="width: 5%;">
+						</div> -->
+						
+						<div class="text-center" style="margin: auto; margin-bottom: 20px; background-color: rgba(229, 57, 72, 0.1); width:max-content; padding:10px;">
+							
+							<p style="margin-bottom: 0%; color:#ffffff; font-size: 24px; width:max-content;"> INR 700</p>
+							
+						</div>
+						<div class="text-center">
+						  <div style="display: flex;
+						  align-items: flex-start;
+						  padding: 0px;
+						  gap: 48px;
+						  justify-content: center;
+						  margin: auto;
+						  ">
+						  <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Buy Now</button>
+						  <button onClick="window.location.href='workshops.html';"  class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Browse all</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		  </div>
+
+
+
 		<section id="workshop_events" class="text-center">
 			<h1 style="font-family: myHeadingFont;" id="weheading">Past Workshops and Events</h1>
 		</br></br>
@@ -438,7 +495,7 @@
 	</div>
 	<!--popup-ad-->
 
-	<div style=" background-color: #ffffff;
+	<!-- <div style=" background-color: #ffffff;
     width: 420px;
     padding: 5px 40px;
     position: absolute;
@@ -477,7 +534,7 @@
 		color: #ffffff;
 		text-decoration: none;
 		padding: 8px 0;" href="#">Let's Go</a>
-    </div>
+    </div> -->
     <!--Script-->
     <script type="text/javascript">
 window.addEventListener("load", function(){
@@ -640,13 +697,13 @@ document.querySelector("#close").addEventListener("click", function(){
 			var nav = document.querySelector("nav");
 			let button = document.querySelector('#navbutton');
 			button.addEventListener("click",()=>{
-				nav.classList.add("bg-dark", "shadow");
+				nav.classList.add("nav-bg", "shadow");
 				});
 			window.addEventListener("scroll", function () {
 				if (window.pageYOffset > 100) {
-					nav.classList.add("bg-dark", "shadow");
+					nav.classList.add("nav-bg", "shadow");
 				} else {
-					nav.classList.remove("bg-dark", "shadow");
+					nav.classList.remove("nav-bg", "shadow");
 				}
 			});
 		</script>
