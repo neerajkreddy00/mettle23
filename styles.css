@@ -716,3 +716,52 @@ body {
   background: linear-gradient(180deg, rgba(30, 15, 18, 0.8) 0%, rgba(30, 9, 12, 0.8) 100%);
   backdrop-filter: blur(6px);
 }
+
+button:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+}
+}
+
+@media (min-width: 500px) {
+.nav-item {
+  display: inline-block;
+  position: relative;
+  color: #E53948;
+}
+
+.nav-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #E53948;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #E53948!important;
+}
+}
