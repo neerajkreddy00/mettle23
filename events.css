@@ -22,12 +22,16 @@ body {
   src: url(/Sequel\ 100/Sequel100Black-75.ttf);
 }
 @font-face {
-  font-family: myFont;
-  src: url(/DM_Sans/DMSans-Regular.ttf);
+  font-family: myHeadingFont;
+  src: url(/Sequel\ 100/Sequel100Black-45.ttf);
 }
 @font-face {
   font-family: myNavFont;
   src: url(/Sequel\ 100/Sequel100Black-55.ttf);
+}
+@font-face {
+  font-family: myFont;
+  src: url(/DM_Sans/DMSans-Regular.ttf);
 }
 .gl_image {
   width: 100%;
