@@ -74,12 +74,12 @@ body {
       padding: 0 100px 0 100px;
     }
   }
-  @media (min-width: 650px){
+  @media (min-width: 300px){
     .home-buttons{
       flex-direction: row;
     }
   }
-  @media (max-width: 650px){
+  @media (max-width: 300px){
     .home-buttons{
       flex-direction: column;
     }
