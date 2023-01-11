@@ -393,3 +393,14 @@ body {
         background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
         z-index: 1;
       }
+
+      @media (max-width: 992px) {
+        .card{
+            flex-direction: column!important;
+            margin:0 !important;
+        }
+        .img img{
+            width: 100%!important;
+            height: 50vw!important;
+        }
+      }
