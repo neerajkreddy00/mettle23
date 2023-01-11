@@ -739,7 +739,7 @@ button:hover {
 }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 300px) {
 .nav-item {
   display: inline-block;
   position: relative;
@@ -764,4 +764,13 @@ button:hover {
   transform-origin: bottom left;
   color: #E53948!important;
 }
+}
+
+@media (max-width:400px){
+  .schedule-dates ul{
+    padding-left: 0px;
+  }
+  .schedule-dates ul li{
+    margin-right: 10px!important;
+  }
 }
