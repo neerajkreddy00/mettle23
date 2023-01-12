@@ -176,6 +176,48 @@
 					justify-content: space-evenly;
 				}
 			}
+
+      /* The Modal (background) */
+          .mdl {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 2000; /* Sit on top */
+            padding: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: scroll; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+          }
+
+          /* Modal Content */
+          .mdl-content {
+            
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #888;
+            width: 80%;
+            border: 1.5px solid rgba(230, 163, 143, 0.6); 
+            border-radius: 20px; 
+            background: linear-gradient(180deg, rgba(30, 15, 18, 0.8) 0%, rgba(30, 9, 12, 0.8) 100%);
+          }
+
+          /* The Close Button */
+          .closer {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-right: 15px;
+          }
+
+          .closer:hover,
+          .closer:focus {
+            color:#E53948;
+            text-decoration: none;
+            cursor: pointer;
+          }
 		</style>
     <script type="text/javascript" src="loader.js"></script>
 	</head>
@@ -237,11 +279,55 @@
 		<br />
 		<h1 class="text-center" style="color: #E53948; font-family: myFirstFont; font-size: 8vw; width: 70vw; margin: auto;">EVENTS</h1>
     <p class="text-center" style="width: 65vw; font-family: myFont; margin: auto;">Discover the infinite at Mettle and unlock the mysteries of fractals for a chance to win prizes!</p>
-		
+		<br />
+		<br />
+        <!--Prefest-->
+        <div class=" text-center">
+          <h1 style="font-family: myHeadingFont; font-size: 4vw;">Prefest Events</h1>
+        </div>
+    
+        <div class = "container">
+          <div class = "row pb-5 d-flex flex-row justify-content-center">
+              <div class="card col-lg-5 p-4 m-4 mt-5 mb-4" style="border: 1.5px solid rgba(230, 163, 143, 0.6); border-radius: 32px; background: linear-gradient(137.74deg, rgba(255, 255, 255, 0.075) 0%, rgba(242, 242, 242, 0.0225) 101.31%);">
+                  <div class="image">
+                    <img style="border: 1.5px solid rgba(230, 163, 143, 0.6); border-radius: 16px;" src="https://mettle.nitt.edu/MettleWorkshops-main/assets/img/3d_norm.png" class  = "w-100" />
+                  
+                    <div class="content" style="font-family: myFont;">
+                     <br>
+                      <div class="header" style="color: #3EB6E6; font-size: 24px;">Photochromic</div>
+                      <div class="description" style="font-size: 16px;">
+                        Photography is a  very special medium that gives a realization of how rich reality is. Here comes an opportunity to show your mettle in “freezing the right moment.” Mettle’23 presents you with Photochromic, our themed photography event. Grab your cameras! Tweak your creativity!! Capture the best!
+                      </div>
+                      <br>
+                      <h1 class="header" style="color:#E53948; font-size: 16px;"><span class="bi bi-trophy-fill"></span> 1st: ₹ 1250 + Voucher worth ₹2000	<br>
+                        <span class="bi bi-trophy-fill"></span> 2nd: ₹ 750 + Voucher worth ₹2000<br>
+                        <span class="bi bi-trophy-fill"></span> 3rd: ₹ 500 + Voucher worth ₹2000
+                        </h1>
+                      <h1 class="header" style="color:#E53948; font-size: 16px;">Jan 9, 2023 - Jan 27, 2023</h1>
+                      <div class="text-center">
+                        <br>
+                        <div class="home-buttons" style="display: flex;
+                        align-items: flex-start;
+                        padding: 0px;
+                        gap: 48px;
+                        justify-content: center;
+                        margin: auto;
+                        ">
+                        <form action="https://forms.gle/HwwxZfKsqR8HmTCM7" method="get" target="_blank">
+                        <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Register</button>
+                        </form>
+                        <button id="myBtn" onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
     <!--Events-->
-    <!-- <div class=" text-center">
+    <div class=" text-center">
       <h1 style="font-family: myHeadingFont; font-size: 4vw;">Events</h1>
-    </div> -->
+    </div>
 
     <div class = "container">
       <div class = "row  d-flex flex-row justify-content-center">
@@ -441,53 +527,47 @@
 
 </div>
 
-    <!--Prefest-->
-    <div class=" text-center">
-      <h1 style="font-family: myHeadingFont; font-size: 4vw;">Prefest Events</h1>
-    </div>
 
-    <div class = "container">
-      <div class = "row pb-5 d-flex flex-row justify-content-center">
-          <div class="card col-lg-5 p-4 m-4 mt-5 mb-4" style="border: 1.5px solid rgba(230, 163, 143, 0.6); border-radius: 32px; background: linear-gradient(137.74deg, rgba(255, 255, 255, 0.075) 0%, rgba(242, 242, 242, 0.0225) 101.31%);">
-              <div class="image">
-                <img style="border: 1.5px solid rgba(230, 163, 143, 0.6); border-radius: 16px;" src="https://mettle.nitt.edu/MettleWorkshops-main/assets/img/3d_norm.png" class  = "w-100" />
-              
-                <div class="content" style="font-family: myFont;">
-                 <br>
-                  <div class="header" style="color: #3EB6E6; font-size: 24px;">Photochromic</div>
-                  <div class="description" style="font-size: 16px;">
-                    Photography is a  very special medium that gives a realization of how rich reality is. Here comes an opportunity to show your mettle in “freezing the right moment.” Mettle’23 presents you with Photochromic, our themed photography event. Grab your cameras! Tweak your creativity!! Capture the best!
-                  </div>
-                  <br>
-                  <h1 class="header" style="color:#E53948; font-size: 16px;"><span class="bi bi-trophy-fill"></span> INR 3000</h1>
-                  <h1 class="header" style="color:#E53948; font-size: 16px;">Deadline: 27/01/23, 11:59 PM IST</h1>
-                  <div class="text-center">
-                    <br>
-                    <div class="home-buttons" style="display: flex;
-                    align-items: flex-start;
-                    padding: 0px;
-                    gap: 48px;
-                    justify-content: center;
-                    margin: auto;
-                    ">
-                    <form action="https://forms.gle/HwwxZfKsqR8HmTCM7" method="get" target="_blank">
-                    <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Register</button>
-                    </form>
-                    <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-      </div>
-    </div>
    
 
 <!--details-->
 
+<!--prefest-->
 
+<div id="myModal" class="mdl">
 
+  <!-- Modal content -->
+  <div class="mdl-content">
+    <span class="closer">&times;</span>
+    <p style="padding: 50px!important; color: rgb(255, 255, 255);">
+      DESCRIPTION:<br>
+      Photography is a  very special medium that gives a realization of how rich reality is. Here comes an opportunity to show your mettle in “freezing the right moment.” Mettle’23 presents you with Photochromic, our themed photography event. Grab your cameras! Tweak your creativity!! Capture the best!
+      RULES:<br>
+      1. The competition is open to students of all departments.<br>
+      2. Entries must be original, unpublished work created by the participant. (Plagiarism is strictly prohibited)<br>
+      3. All entries must be submitted online through the designated platform by the specified deadline. Each photograph must be accompanied by a one-line tagline that reflects the theme of the competition.<br>
+      4. Each participant may submit 1 photograph based on the themes provided. Only one submission per participant is allowed.<br>
+      5. Only one picture per frame is allowed.<br>
+      6. Copyright the image in this format – Name_CollegeName. Also, a submission, once done, can not be taken back for modifications under any circumstances. <br>
+      7. The judges reserve the right to disqualify any entry that does not meet the criteria, or that is deemed inappropriate.<br>
+      8. The winners will be announced on the designated platform and will be contacted directly by the organizers. The judges' decisions are final, and no correspondence will be entered into. <br>
+      9. The top 3 entries will be published on our social media handles.<br><br>
+      JUDGING CRITERIA:<br>
+      1. Judging purely depends on the judges.<br>
+      2. Judging criteria will be based on the following:<br>
+                * Relevance to the theme<br>
+                * Creativity of image as well as caption<br>
+                * Techniques used<br><br>
+      THEME:<br>
+      Lustre in Materials<br><br>
+      Cash Prize: <br>
+      1st: ₹ 1250 + Voucher worth ₹2000	<br>
+      2nd: ₹ 750 + Voucher worth ₹2000<br>
+      3rd: ₹ 500 + Voucher worth ₹2000<br>
+      </p>
+  </div>
 
+</div>
 
 
 
@@ -571,22 +651,49 @@
           </div>
         </div>
       </footer>
-        <script>
+        <!-- <script>
           function openPopup() {
-              document.getElementById("boxPopup").style.display = "block";
+              document.getElementById("myModal").style.display = "block";
           }
   
           function closePopup() {
-              document.getElementById("boxPopup").style.display = "none";
+              document.getElementById("myModal").style.display = "none";
           }
           // When the user clicks anywhere outside of the modal, close it
           window.onclick = function (event) {
-              var modal = document.getElementById('boxPopup');
+              var modal = document.getElementById('myModal');
               if (event.target == modal) {
                   closePopup();
               }
           }
-      </script>
+      </script> -->
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("closer")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
                   <script type="text/javascript">
                     var nav = document.querySelector("nav");
                     let button = document.querySelector('#navbutton');
