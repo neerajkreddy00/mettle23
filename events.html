@@ -182,12 +182,13 @@
             display: none; /* Hidden by default */
             position: fixed; /* Stay in place */
             z-index: 2000; /* Sit on top */
-            padding: 100px; /* Location of the box */
+            padding:   0; /* Location of the box */
             left: 0;
             top: 0;
+            margin-top: 20px;
             width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: scroll; /* Enable scroll if needed */
+            height: 100vh; /* Full height */
+            overflow:scroll; /* Enable scroll if needed */
             background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
           }
 
@@ -197,7 +198,7 @@
             margin: auto;
             padding: 10px;
             border: 1px solid #888;
-            width: 80%;
+            width: 100%;
             border: 1.5px solid rgba(230, 163, 143, 0.6); 
             border-radius: 20px; 
             background: linear-gradient(180deg, rgba(30, 15, 18, 0.8) 0%, rgba(30, 9, 12, 0.8) 100%);
@@ -217,6 +218,23 @@
             color:#E53948;
             text-decoration: none;
             cursor: pointer;
+          }
+
+          .doc-content{
+            padding: 24px!important;
+          }
+          iframe{
+            margin: auto;
+            width: 100%;
+            height: 80vh;
+          }
+          @media (max-width:900px) {
+            .mdl-content{
+              width: 100%;
+            }
+            .mdl{
+              padding: 5px;
+            }
           }
 		</style>
     <script type="text/javascript" src="loader.js"></script>
@@ -357,7 +375,7 @@
                     margin: auto;
                     ">
                     <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Register</button>
-                    <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
+                    <button id="myBtn1" onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
                     </div>
                   </div>
                 </div>
@@ -387,7 +405,7 @@
                   margin: auto;
                   ">
                   <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Register</button>
-                  <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
+                  <button id="myBtn2" onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
                   </div>
                 </div>
               </div>
@@ -420,7 +438,7 @@
                   margin: auto;
                   ">
                   <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Register</button>
-                  <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
+                  <button id="myBtn3" onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
                   </div>
                 </div>
               </div>
@@ -452,7 +470,7 @@
                 margin: auto;
                 ">
                 <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Register</button>
-                <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
+                <button id="myBtn4" onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
                 </div>
               </div>
             </div>
@@ -495,7 +513,7 @@
               margin: auto;
               ">
               <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Register</button>
-              <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
+              <!-- <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button> -->
               </div>
             </div>
           </div>
@@ -526,7 +544,7 @@
             margin: auto;
             ">
             <button class = "mb-2 align-content" style="border-width:0px; background: #E53948; color:white; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Register</button>
-            <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button>
+            <!-- <button onclick="openPopup()" class = "mb-2 align-content" style="border:1px solid #E53948; background: transparent; color:#E53948; padding: 10px; font-family: myNavFont; font-size: 15px; width: 150px;">Details</button> -->
             </div>
           </div>
         </div>
@@ -548,38 +566,51 @@
   <!-- Modal content -->
   <div class="mdl-content">
     <span class="closer">&times;</span>
-    <p style="padding: 50px!important; color: rgb(255, 255, 255);">
-      DESCRIPTION:<br>
-      Photography is a  very special medium that gives a realization of how rich reality is. Here comes an opportunity to show your mettle in “freezing the right moment.” Mettle’23 presents you with Photochromic, our themed photography event. Grab your cameras! Tweak your creativity!! Capture the best!
-      RULES:<br>
-      1. The competition is open to students of all departments.<br>
-      2. Entries must be original, unpublished work created by the participant. (Plagiarism is strictly prohibited)<br>
-      3. All entries must be submitted online through the designated platform by the specified deadline. Each photograph must be accompanied by a one-line tagline that reflects the theme of the competition.<br>
-      4. Each participant may submit 1 photograph based on the themes provided. Only one submission per participant is allowed.<br>
-      5. Only one picture per frame is allowed.<br>
-      6. Copyright the image in this format – Name_CollegeName. Also, a submission, once done, can not be taken back for modifications under any circumstances. <br>
-      7. The judges reserve the right to disqualify any entry that does not meet the criteria, or that is deemed inappropriate.<br>
-      8. The winners will be announced on the designated platform and will be contacted directly by the organizers. The judges' decisions are final, and no correspondence will be entered into. <br>
-      9. The top 3 entries will be published on our social media handles.<br><br>
-      JUDGING CRITERIA:<br>
-      1. Judging purely depends on the judges.<br>
-      2. Judging criteria will be based on the following:<br>
-                * Relevance to the theme<br>
-                * Creativity of image as well as caption<br>
-                * Techniques used<br><br>
-      THEME:<br>
-      Lustre in Materials<br><br>
-      Cash Prize: <br>
-      1st: ₹ 1250 + Voucher worth ₹2000	<br>
-      2nd: ₹ 750 + Voucher worth ₹2000<br>
-      3rd: ₹ 500 + Voucher worth ₹2000<br>
-      </p>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTDhjWWPjV0wU1swrUy92Y9SJfSB2asi1jTv7MPa47C4zjDMBcJNx0evg2OKWhpng/pub?embedded=true"></iframe>
+  </div>
+
+</div>
+<!--what if-->
+<div id="myModal1" class="mdl">
+
+  <!-- Modal content -->
+  <div class="mdl-content">
+    <span class="closer">&times;</span>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vRBCuqXuJ__Yz2SfJsIoDWHp5YB2ONDG-kOpYHfrjgBQdkoJQC31FvAkammsU7hamEFaYiwXn8R68VK/pub?embedded=true"></iframe>
   </div>
 
 </div>
 
+<!--metal mania-->
+<div id="myModal2" class="mdl">
 
+  <!-- Modal content -->
+  <div class="mdl-content">
+    <span class="closer">&times;</span>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vShiX0OMxijH-q5vRFPgvzZH4TkftVT6ZtZBxNCbT63to0YWRWhWBTwOIh-brh_tjQfV4rqCiCG1BLx/pub?embedded=true"></iframe>
+  </div>
 
+</div>
+<!--ace the case-->
+<div id="myModal3" class="mdl">
+
+  <!-- Modal content -->
+  <div class="mdl-content">
+    <span class="closer">&times;</span>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vS6gc3rTFDbUfnAvcJqqW9NcUJgdJQVuOjofSYR24aZstf5GuKVfGOHFg_rY-PRAXSShIfTtu6zdLvA/pub?embedded=true"></iframe>
+  </div>
+
+</div>
+<!--combinatorials-->
+<div id="myModal4" class="mdl">
+
+  <!-- Modal content -->
+  <div class="mdl-content">
+    <span class="closer">&times;</span>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTUJ_MRgCunmn4t15I-all3qIy-K8lXV5sOmYFAkk6xt1oMKiGr_21nt_1GSJM-PDwJC6qYt27udJlC/pub?embedded=true"></iframe>
+  </div>
+
+</div>
 
       <footer class="mainfooter" role="contentinfo">
         <div class="container">
@@ -660,46 +691,88 @@
           </div>
         </div>
       </footer>
-        <!-- <script>
-          function openPopup() {
-              document.getElementById("myModal").style.display = "block";
-          }
-  
-          function closePopup() {
-              document.getElementById("myModal").style.display = "none";
-          }
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function (event) {
-              var modal = document.getElementById('myModal');
-              if (event.target == modal) {
-                  closePopup();
-              }
-          }
-      </script> -->
+       
       <script>
         // Get the modal
         var modal = document.getElementById("myModal");
+        var modal1 = document.getElementById("myModal1");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
         
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
+        var btn1 = document.getElementById("myBtn1");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
+        var btn4 = document.getElementById("myBtn4");
+
         
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("closer")[0];
+        var span1 = document.getElementsByClassName("closer")[1];
+        var span2 = document.getElementsByClassName("closer")[2];
+        var span3 = document.getElementsByClassName("closer")[3];
+        var span4 = document.getElementsByClassName("closer")[4];
+
         
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
           modal.style.display = "block";
         }
-        
+        btn1.onclick = function() {
+          modal1.style.display = "block";
+        }
+        btn2.onclick = function() {
+          modal2.style.display = "block";
+        }
+        btn3.onclick = function() {
+          modal3.style.display = "block";
+        }
+        btn4.onclick = function() {
+          modal4.style.display = "block";
+        }
+
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
           modal.style.display = "none";
         }
-        
+        span1.onclick = function() {
+          modal1.style.display = "none";
+        }
+        span2.onclick = function() {
+          modal2.style.display = "none";
+        }
+        span3.onclick = function() {
+          modal3.style.display = "none";
+        }
+        span4.onclick = function() {
+          modal4.style.display = "none";
+        }
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
           if (event.target == modal) {
             modal.style.display = "none";
+          }
+        }
+        window.onclick = function(event) {
+          if (event.target == modal1) {
+            modal1.style.display = "none";
+          }
+        }
+        window.onclick = function(event) {
+          if (event.target == modal2) {
+            modal2.style.display = "none";
+          }
+        }
+        window.onclick = function(event) {
+          if (event.target == modal3) {
+            modal3.style.display = "none";
+          }
+        }
+        window.onclick = function(event) {
+          if (event.target == modal4) {
+            modal4.style.display = "none";
           }
         }
         </script>
